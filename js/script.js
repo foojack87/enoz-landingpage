@@ -7,6 +7,7 @@ yearEL.textContent = currentYear;
 const header = document.querySelector('.header');
 const mainNav = document.querySelector('.main-nav');
 const btnNav = document.querySelector('.btn-mobile-nav');
+const navCta = document.querySelector('.nav-cta');
 
 const allLinks = document.querySelectorAll('a:link');
 
@@ -15,24 +16,24 @@ btnNav.addEventListener('click', function (e) {
   header.classList.toggle('nav-open');
 });
 
-allLinks.forEach(function (link) {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
+// allLinks.forEach(function (link) {
+//   link.addEventListener('click', function (e) {
+//     e.preventDefault();
 
-    const href = link.getAttribute('href');
+//     const href = link.getAttribute('href');
 
-    if (href === '#') {
-      window.scrollTo({ top: 0, bottom: 'smooth' });
-    }
+//     if (href === '#') {
+//       window.scrollTo({ top: 0, bottom: 'smooth' });
+//     }
 
-    if (href !== '#' && href.startsWith('#')) {
-      const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({ behavior: 'smooth' });
-    }
-    if (link.classList.contains('main-nav-link'))
-      header.classList.toggle('nav-open');
-  });
-});
+//     if (href !== '#' && href.startsWith('#')) {
+//       const sectionEl = document.querySelector(href);
+//       sectionEl.scrollIntoView({ behavior: 'smooth' });
+//     }
+//     if (link.classList.contains('main-nav-link'))
+//       header.classList.toggle('nav-open');
+//   });
+// });
 
 //// STICKY NAV ////
 
