@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rubik:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rubik:wght@200,300,400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -179,8 +179,8 @@
           </div>
 
           <div class="product-txt-box">
-            <h3 class="heading-tertiary">Oolong</h3>
-            <p class="step-desc">
+            <h3 class="heading-tertiary product-name--oolong">Oolong</h3>
+            <p class="step-desc product-content">
               Oolong tea leaves smoked with longan wood to create a naturally
               sweet and fruity flavor.
             </p>
@@ -196,8 +196,8 @@
           </div>
 
           <div class="product-txt-box">
-            <h3 class="heading-tertiary">Black</h3>
-            <p class="step-desc">
+            <h3 class="heading-tertiary product-name--black">Black</h3>
+            <p class="step-desc product-content">
               These are made with a rare type of black tea leaves, where the tea
               buds are bitten by a type of leahopper called the Jacobiasca
               Formosana. These tea buds will then grow into leaves that have a
@@ -215,8 +215,8 @@
           </div>
 
           <div class="product-txt-box">
-            <h3 class="heading-tertiary">Jade Green</h3>
-            <p class="step-desc">
+            <h3 class="heading-tertiary product-name--jadegreen">Jade Green</h3>
+            <p class="step-desc product-content">
               Made from green tea smoked with jasmine flower to bring more
               natural sweetness to its flavor.
             </p>
@@ -232,8 +232,10 @@
           </div>
 
           <div class="product-txt-box">
-            <h3 class="heading-tertiary">Four Seasons</h3>
-            <p class="step-desc">
+            <h3 class="heading-tertiary product-name--fourseason">
+              Four Seasons
+            </h3>
+            <p class="step-desc product-content">
               A very light flavored flowery taste made from four season tea
               leaves.
             </p>
@@ -302,23 +304,27 @@
             Made with the best ingredients from Taiwan
           </h2>
         </div>
-        <div class="container grid grid--2-cols">
+
+        <div class="container grid grid-rwd">
+          <!-- <div class="grid-columns"> -->
           <div class="tea-product">
-            <img src="img/oolongbox.png" class="tea-img" alt="Oolong" />
-            <div class="tea-content">
-              <div class="tea-name">
-                <span class="namebg name--oolong">Oolong</span>
+            <div class="tea-product--side tea-product--front">
+              <div class="img-box">
+                <img
+                  src="img/oolongbox.png"
+                  class="tea-img tea-img--oolong"
+                  alt="Oolong"
+                />
               </div>
-              <ul class="tea-attributes">
-                <div class="tea-ingredients">
+              <div class="tea-content">
+                <ul class="tea-attributes">
                   <li class="tea-attribute">
                     <span>Smoked oolong tea leaves</span>
                   </li>
                   <li class="tea-attribute">
                     <span>Dried Goji berries</span>
                   </li>
-                </div>
-                <div class="tea-contents">
+
                   <li class="tea-attribute">
                     <span>Caffeine: 55 mg/8oz</span>
                   </li>
@@ -328,33 +334,45 @@
                   <li class="tea-attribute">
                     <span><strong>20</strong> packs/box</span>
                   </li>
-                </div>
-              </ul>
-            </div>
-            <button
-              class="cta-btn btn btn--outline"
-              onclick="location.href='https://drinkenoz.myshopify.com/products/oolong'"
-              type="button"
-            >
-              BUY HERE
-            </button>
-          </div>
-          <div class="tea-product">
-            <img src="img/blackbox.png" class="tea-img" alt="Black tea" />
-            <div class="tea-content">
-              <div class="tea-name">
-                <span class="namebg name--black">black</span>
+                </ul>
               </div>
-              <ul class="tea-attributes">
-                <div class="tea-ingredients">
+            </div>
+            <div
+              class="tea-product--side tea-product--back tea-product--back-1"
+            >
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Only</p>
+                  <p class="card__price-amount">
+                    <span class="card__price-currency">NTD$</span
+                    ><span class="card__price-value">469</span>
+                  </p>
+                  <a href="#" class="btn__animated btn--white margin-top-medium"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tea-product">
+            <div class="tea-product--side tea-product--front">
+              <div class="img-box">
+                <img
+                  src="img/blackbox.png"
+                  class="tea-img tea-img--black"
+                  alt="Black tea"
+                />
+              </div>
+              <div class="tea-content">
+                <ul class="tea-attributes">
                   <li class="tea-attribute">
                     <span>Smoked black tea leaves</span>
                   </li>
                   <li class="tea-attribute">
                     <span>Dried Goji berries</span>
                   </li>
-                </div>
-                <div class="tea-contents">
+
                   <li class="tea-attribute">
                     <span>Caffeine: 47 mg/8oz</span>
                   </li>
@@ -364,33 +382,45 @@
                   <li class="tea-attribute">
                     <span><strong>20</strong> packs/box</span>
                   </li>
-                </div>
-              </ul>
-            </div>
-            <button
-              class="cta-btn btn btn--outline"
-              onclick="location.href='https://drinkenoz.myshopify.com/products/black-tea'"
-              type="button"
-            >
-              BUY HERE
-            </button>
-          </div>
-          <div class="tea-product">
-            <img src="img/jadegreenbox.png" class="tea-img" alt="Green tea" />
-            <div class="tea-content">
-              <div class="tea-name">
-                <span class="namebg name--green">Jade Green</span>
+                </ul>
               </div>
-              <ul class="tea-attributes">
-                <div class="tea-ingredients">
+            </div>
+            <div
+              class="tea-product--side tea-product--back tea-product--back-2"
+            >
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Only</p>
+                  <p class="card__price-amount">
+                    <span class="card__price-currency">NTD$</span
+                    ><span class="card__price-value">469</span>
+                  </p>
+                  <a href="#" class="btn__animated btn--white margin-top-medium"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tea-product">
+            <div class="tea-product--side tea-product--front">
+              <div class="img-box">
+                <img
+                  src="img/jadegreenbox.png"
+                  class="tea-img tea-img--jadegreen"
+                  alt="Green tea"
+                />
+              </div>
+              <div class="tea-content">
+                <ul class="tea-attributes">
                   <li class="tea-attribute">
                     <span>Smoked green tea leaves</span>
                   </li>
                   <li class="tea-attribute">
                     <span>Dried Goji berries</span>
                   </li>
-                </div>
-                <div class="tea-contents">
+
                   <li class="tea-attribute">
                     <span>Caffeine: 28 mg/8oz</span>
                   </li>
@@ -400,37 +430,45 @@
                   <li class="tea-attribute">
                     <span><strong>20</strong> packs/box</span>
                   </li>
-                </div>
-              </ul>
-            </div>
-            <button
-              class="cta-btn btn btn--outline"
-              onclick="location.href='https://drinkenoz.myshopify.com/products/jade-green-tea'"
-              type="button"
-            >
-              BUY HERE
-            </button>
-          </div>
-          <div class="tea-product">
-            <img
-              src="img/fourseasonbox.png"
-              class="tea-img"
-              alt="Four seasons"
-            />
-            <div class="tea-content">
-              <div class="tea-name">
-                <span class="namebg name--fourseason">four season</span>
+                </ul>
               </div>
-              <ul class="tea-attributes">
-                <div class="tea-ingredients">
+            </div>
+            <div
+              class="tea-product--side tea-product--back tea-product--back-3"
+            >
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Only</p>
+                  <p class="card__price-amount">
+                    <span class="card__price-currency">NTD$</span
+                    ><span class="card__price-value">369</span>
+                  </p>
+                  <a href="#" class="btn__animated btn--white margin-top-medium"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tea-product">
+            <div class="tea-product--side tea-product--front">
+              <div class="img-box">
+                <img
+                  src="img/fourseasonbox.png"
+                  class="tea-img tea-img--fourseason"
+                  alt="Four seasons"
+                />
+              </div>
+              <div class="tea-content">
+                <ul class="tea-attributes">
                   <li class="tea-attribute">
                     <span>Four season tea leaves</span>
                   </li>
                   <li class="tea-attribute">
                     <span>Dried Goji berries</span>
                   </li>
-                </div>
-                <div class="tea-contents">
+
                   <li class="tea-attribute">
                     <span>Caffeine: 21 mg/8oz</span>
                   </li>
@@ -440,16 +478,25 @@
                   <li class="tea-attribute">
                     <span><strong>20</strong> packs/box</span>
                   </li>
-                </div>
-              </ul>
+                </ul>
+              </div>
             </div>
-            <button
-              class="cta-btn btn btn--outline"
-              onclick="location.href='https://drinkenoz.myshopify.com/products/four-season-tea'"
-              type="button"
+            <div
+              class="tea-product--side tea-product--back tea-product--back-4"
             >
-              BUY HERE
-            </button>
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Only</p>
+                  <p class="card__price-amount">
+                    <span class="card__price-currency">NTD$</span
+                    ><span class="card__price-value">369</span>
+                  </p>
+                  <a href="#" class="btn__animated btn--white margin-top-medium"
+                    >Buy now</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

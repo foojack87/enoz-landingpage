@@ -9,7 +9,7 @@ const mainNav = document.querySelector('.main-nav');
 const btnNav = document.querySelector('.btn-mobile-nav');
 const navCta = document.querySelector('.nav-cta');
 
-const allLinks = document.querySelectorAll('a:link');
+// const allLinks = document.querySelectorAll('a:link');
 
 btnNav.addEventListener('click', function (e) {
   e.preventDefault();

@@ -56,7 +56,7 @@ body {
 .heading-tertiary {
   font-size: 3rem;
   line-height: 1.2;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.8rem;
 }
 
 .btn,
@@ -114,14 +114,75 @@ body {
   background-color: #fff;
 }
 
+.btn__animated,
+.btn__animated:link,
+.btn__animted:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 70px;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  padding: 1.2rem 2.8rem;
+}
+
+.btn__animated::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  transition: all 0.4s;
+}
+
+.btn__animated:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(51, 51, 51, 0.3);
+}
+
+.btn__animated:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn__animated:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.2);
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--white::after {
+  background-color: #fff;
+  color: #555;
+}
+
 /****************************/
 /* REUSEABLE GRIDS */
 /****************************/
 
 .grid {
+  height: 100%;
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+}
+
+.grid-columns {
+  display: grid;
+  margin-left: 24rem;
+  margin-right: 24rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 6rem;
 }
 
 .grid:not(:last-child) {
@@ -148,6 +209,10 @@ body {
   align-items: center;
 }
 
+.grid-rwd {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 /****************************/
 /* HELPER STYLES */
 /****************************/
@@ -158,4 +223,8 @@ body {
 
 .margin-bottom-medium {
   margin-bottom: 4.8rem !important;
+}
+
+.margin-top-medium {
+  margin-top: 8rem;
 }
