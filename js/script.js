@@ -16,6 +16,17 @@ btnNav.addEventListener('click', function (e) {
   header.classList.toggle('nav-open');
 });
 
+// Detect when the divs enter the viewport
+window.addEventListener('scroll', function () {
+  const slideInDivs = document.querySelectorAll('.slide-in');
+  slideInDivs.forEach(function (div) {
+    const bounding = div.getBoundingClientRect();
+
+    if (bounding.top < window.innerHeight) {
+      div.classList.add('show'); // Add show class to trigger the slide-in animation
+    }
+  });
+});
 // allLinks.forEach(function (link) {
 //   link.addEventListener('click', function (e) {
 //     e.preventDefault();

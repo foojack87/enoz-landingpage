@@ -715,3 +715,18 @@ Default: 9px
 .footer-link:active {
   color: #555;
 }
+
+/* animations */
+
+.slide-in {
+  opacity: 0; /* Start with 0 opacity */
+  transform: translateY(100px); /* Start position below the viewport */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Add transitions for smooth animation */
+}
+
+.slide-in.show {
+  opacity: 1; /* When the div enters the viewport, set opacity to 1 */
+  transform: translateY(
+    0
+  ); /* When the div enters the viewport, set transform to 0 */
+}
