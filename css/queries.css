@@ -91,6 +91,57 @@
   .grid-rwd {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .tea-product {
+    height: auto;
+    perspective: 0;
+  }
+
+  .tea-product--side {
+    height: auto;
+    position: relative;
+    transition: none;
+    backface-visibility: visible;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 1rem;
+  }
+
+  .card__cta {
+    position: relative;
+    transform: translate(0);
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .btn--white {
+    width: 14rem;
+    place-self: center;
+  }
+
+  .margin-top-medium {
+    margin-top: 2rem;
+  }
+
+  .card__price-box {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .tea-product:hover .tea-product--front {
+    transform: none;
+  }
+
+  .tea-product:hover .tea-product--back {
+    transform: none;
+  }
+
+  .tea-product--back {
+    transform: none;
+  }
 }
 
 /****************************/
