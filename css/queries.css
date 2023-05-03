@@ -266,7 +266,7 @@
 /* BELOW 375px (phones) 23em breakpoint */
 /****************************/
 
-@media (max-width: 23em) {
+@media (max-width: 28em) {
   .grid-rwd {
     grid-template-columns: 1fr;
   }
