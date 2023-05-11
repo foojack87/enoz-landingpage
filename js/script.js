@@ -506,7 +506,7 @@ function changeLanguage() {
     'Made with the best ingredients from Taiwan'
   ) {
     // Change to Chinese
-    prod_details_title.textContent = `使用台灣最好的材料`;
+    prod_details_title.textContent = `使用台灣最好的原料`;
   } else {
     // Change to English
     prod_details_title.textContent =
@@ -775,6 +775,50 @@ function changeLanguage() {
   } else {
     // Change to English
     four_g.textContent = '4g / pack';
+  }
+
+  const oolongbuy = document.getElementById('oolongbuy');
+
+  // Check the current language
+  if (oolongbuy.textContent.trim() === 'Buy now') {
+    // Change to Chinese
+    oolongbuy.textContent = `立即購買`;
+  } else {
+    // Change to English
+    oolongbuy.textContent = 'Buy now';
+  }
+
+  const blackbuy = document.getElementById('blackbuy');
+
+  // Check the current language
+  if (blackbuy.textContent.trim() === 'Buy now') {
+    // Change to Chinese
+    blackbuy.textContent = `立即購買`;
+  } else {
+    // Change to English
+    blackbuy.textContent = 'Buy now';
+  }
+
+  const greenbuy = document.getElementById('greenbuy');
+
+  // Check the current language
+  if (greenbuy.textContent.trim() === 'Buy now') {
+    // Change to Chinese
+    greenbuy.textContent = `立即購買`;
+  } else {
+    // Change to English
+    greenbuy.textContent = 'Buy now';
+  }
+
+  const fourbuy = document.getElementById('fourbuy');
+
+  // Check the current language
+  if (fourbuy.textContent.trim() === 'Buy now') {
+    // Change to Chinese
+    fourbuy.textContent = `立即購買`;
+  } else {
+    // Change to English
+    fourbuy.textContent = 'Buy now';
   }
 
   const prod_reminder_text = document.getElementById('prod_reminder_text');
