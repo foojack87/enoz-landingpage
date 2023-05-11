@@ -759,7 +759,6 @@ Default: 9px
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
 }
 
 .modal-content {
