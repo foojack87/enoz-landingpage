@@ -32,15 +32,41 @@
       /></a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#features">Features</a></li>
-          <li><a class="main-nav-link" href="#flavors">What's inside</a></li>
-          <li><a class="main-nav-link" href="#garden">The Garden</a></li>
-          <li><a class="main-nav-link" href="#products">Products</a></li>
-          <li><a class="main-nav-link" href="#cta">Contact Us</a></li>
+          <li>
+            <a class="main-nav-link" href="#features" id="features_nav"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link" href="#flavors" id="flavors_nav"
+              >What's inside</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link" href="#garden" id="garden_nav"
+              >The Garden</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link" href="#products" id="products_nav"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link" href="#cta" id="cta_nav">Contact Us</a>
+          </li>
+          <button
+            class="language-button"
+            id="languageButton"
+            onclick="changeLanguage()"
+          >
+            English / 中文
+          </button>
           <div>
             <a
               class="main-nav-link nav-cta"
               href="https://drinkenoz.myshopify.com/"
+              id="buynow"
               >Buy Now</a
             >
           </div>
@@ -57,13 +83,20 @@
       <section class="section-hero">
         <div class="hero">
           <div class="hero-txt-box">
-            <h1 class="heading-primary">The secret of concentration</h1>
-            <p class="hero-desc">
+            <h1 class="heading-primary" id="hero_heading">
+              The secret of concentration
+            </h1>
+            <p class="hero-desc" id="hero_main">
               An all natural drink with no additives designed to keep you
               concentrated and drinking healthy. Tailored for consumers that
               spend long hours on their computers.
             </p>
-            <a href="#features" class="btn btn--outline hero-btn">Learn More</a>
+            <a
+              href="#features"
+              class="btn btn--outline hero-btn"
+              id="learn_more"
+              >Learn More</a
+            >
           </div>
           <div class="hero-img-box">
             <picture>
@@ -79,8 +112,8 @@
 
       <section class="section-features" id="features">
         <div class="container">
-          <span class="subheading">features</span>
-          <h2 class="heading-secondary">
+          <span class="subheading" id="features_sub">features</span>
+          <h2 class="heading-secondary" id="features_heading">
             Must know features about our products
           </h2>
         </div>
@@ -88,8 +121,8 @@
         <div class="container grid grid--2-cols grid--center-v">
           <div class="step-txt-box slide-in">
             <p class="step-number">1</p>
-            <h3 class="heading-tertiary">Ingredients</h3>
-            <p class="step-desc">
+            <h3 class="heading-tertiary" id="ingredients">Ingredients</h3>
+            <p class="step-desc" id="ingredients_desc">
               Ingredients are all natural with zero additives. Main ingredients
               include tea leaves and goji berries. We do not add any sugar and
               only use the natural sweetness from the goji berries, while also
@@ -114,8 +147,10 @@
 
           <div class="step-txt-box slide-in">
             <p class="step-number">2</p>
-            <h3 class="heading-tertiary">Concentration and Health</h3>
-            <p class="step-desc">
+            <h3 class="heading-tertiary" id="conc_health">
+              Concentration and Health
+            </h3>
+            <p class="step-desc" id="conc_desc">
               Natural caffeine and L-Theanine from tea leaves to keep you
               concentrated. Tea leaves naturally produces L-Theanine. L-theanine
               promotes relaxation by reducing stress and anxiety.
@@ -124,8 +159,8 @@
 
           <div class="step-txt-box slide-in">
             <p class="step-number">3</p>
-            <h3 class="heading-tertiary">Origin</h3>
-            <p class="step-desc">
+            <h3 class="heading-tertiary" id="origin">Origin</h3>
+            <p class="step-desc" id="origin_desc">
               Tea leaves are all hand-picked from the high mountains of Taiwan.
               Our ingredients, especially our tea leaves are very carefully
               roasted and curated from our own tea garden. We use the best
@@ -154,8 +189,8 @@
 
           <div class="step-txt-box slide-in">
             <p class="step-number">4</p>
-            <h3 class="heading-tertiary">Signature Brew</h3>
-            <p class="step-desc">
+            <h3 class="heading-tertiary" id="brew">Signature Brew</h3>
+            <p class="step-desc" id="brew_desc">
               Our drink can be brewed both hot or cold depending on preferences.
               However our signature is the cold brew. With just 1-3 min of
               shaking in a bottle, it is ready to drink.
@@ -166,8 +201,8 @@
 
       <section class="section-products" id="flavors">
         <div class="container center-text">
-          <span class="subheading">Enoz products</span>
-          <h2 class="heading-secondary">
+          <span class="subheading" id="prods_sub">Enoz products</span>
+          <h2 class="heading-secondary" id="prods_heading">
             We currently offer 4 different flavors
           </h2>
         </div>
@@ -179,8 +214,10 @@
           </div>
 
           <div class="product-txt-box">
-            <h3 class="heading-tertiary product-name--oolong">Oolong</h3>
-            <p class="step-desc product-content">
+            <h3 class="heading-tertiary product-name--oolong" id="oolong">
+              Oolong
+            </h3>
+            <p class="step-desc product-content" id="oolong_desc">
               Oolong tea leaves smoked with longan wood to create a naturally
               sweet and fruity flavor.
             </p>
@@ -196,8 +233,10 @@
           </div>
 
           <div class="product-txt-box">
-            <h3 class="heading-tertiary product-name--black">Black</h3>
-            <p class="step-desc product-content">
+            <h3 class="heading-tertiary product-name--black" id="black">
+              Black
+            </h3>
+            <p class="step-desc product-content" id="black_desc">
               These are made with a rare type of black tea leaves, where the tea
               buds are bitten by a type of leahopper called the Jacobiasca
               Formosana. These tea buds will then grow into leaves that have a
@@ -215,8 +254,10 @@
           </div>
 
           <div class="product-txt-box">
-            <h3 class="heading-tertiary product-name--jadegreen">Jade Green</h3>
-            <p class="step-desc product-content">
+            <h3 class="heading-tertiary product-name--jadegreen" id="jade">
+              Jade Green
+            </h3>
+            <p class="step-desc product-content" id="jade_desc">
               Made from green tea smoked with jasmine flower to bring more
               natural sweetness to its flavor.
             </p>
@@ -232,10 +273,10 @@
           </div>
 
           <div class="product-txt-box">
-            <h3 class="heading-tertiary product-name--fourseason">
+            <h3 class="heading-tertiary product-name--fourseason" id="fours">
               Four Seasons
             </h3>
-            <p class="step-desc product-content">
+            <p class="step-desc product-content" id="fours_desc">
               A very light flavored flowery taste made from four season tea
               leaves.
             </p>
@@ -245,7 +286,7 @@
       <section class="section-gallery" id="garden">
         <div class="gallery container">
           <div class="gallery-heading">
-            <p>Enoz <br />tea <br />garden</p>
+            <p id="gallery_title">Enoz <br />tea <br />garden</p>
           </div>
           <figure class="gallery-item">
             <img
@@ -299,8 +340,8 @@
       </section>
       <section class="section-product-desc" id="products">
         <div class="container">
-          <span class="subheading">Product Details</span>
-          <h2 class="heading-secondary">
+          <span class="subheading" id="prod_details_sub">Product Details</span>
+          <h2 class="heading-secondary" id="prod_details_title">
             Made with the best ingredients from Taiwan
           </h2>
         </div>
@@ -319,20 +360,23 @@
               <div class="tea-content">
                 <ul class="tea-attributes">
                   <li class="tea-attribute">
-                    <span>Smoked oolong tea leaves</span>
+                    <span id="oolong_ing">Smoked oolong tea leaves</span>
                   </li>
                   <li class="tea-attribute">
-                    <span>Dried Goji berries</span>
+                    <span id="oolong_ing1">Dried Goji berries</span>
                   </li>
 
                   <li class="tea-attribute">
-                    <span>Caffeine: 55 mg/8oz</span>
+                    <span id="oolong_caff">Caffeine: 55 mg/8oz</span>
                   </li>
                   <li class="tea-attribute">
-                    <span>L-Theanine: 6.21 mg/cup</span>
+                    <span id="oolong_theanine">L-Theanine: 6.21 mg/cup</span>
                   </li>
                   <li class="tea-attribute">
-                    <span><strong>20</strong> packs/box</span>
+                    <span id="oolong_packs"><strong>20</strong> packs/box</span>
+                  </li>
+                  <li class="tea-attribute">
+                    <span id="oolong_g"><strong>4</strong>g / pack</span>
                   </li>
                 </ul>
               </div>
@@ -345,7 +389,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-amount">
                     <span class="card__price-currency">NTD$</span
-                    ><span class="card__price-value">598</span>
+                    ><span class="card__price-value">780</span>
                   </p>
                   <a
                     href="https://drinkenoz.myshopify.com/"
@@ -369,20 +413,23 @@
               <div class="tea-content">
                 <ul class="tea-attributes">
                   <li class="tea-attribute">
-                    <span>Smoked black tea leaves</span>
+                    <span id="black_ing">Smoked black tea leaves</span>
                   </li>
                   <li class="tea-attribute">
-                    <span>Dried Goji berries</span>
+                    <span id="black_ing1">Dried Goji berries</span>
                   </li>
 
                   <li class="tea-attribute">
-                    <span>Caffeine: 47 mg/8oz</span>
+                    <span id="black_caff">Caffeine: 47 mg/8oz</span>
                   </li>
                   <li class="tea-attribute">
-                    <span>L-Theanine: 5.13 mg/cup</span>
+                    <span id="black_theanine">L-Theanine: 5.13 mg/cup</span>
                   </li>
                   <li class="tea-attribute">
-                    <span><strong>20</strong> packs/box</span>
+                    <span id="black_packs"><strong>20</strong> packs/box</span>
+                  </li>
+                  <li class="tea-attribute">
+                    <span id="black_g"><strong>4</strong>g / pack</span>
                   </li>
                 </ul>
               </div>
@@ -395,7 +442,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-amount">
                     <span class="card__price-currency">NTD$</span
-                    ><span class="card__price-value">598</span>
+                    ><span class="card__price-value">780</span>
                   </p>
                   <a
                     href="https://drinkenoz.myshopify.com/"
@@ -419,20 +466,23 @@
               <div class="tea-content">
                 <ul class="tea-attributes">
                   <li class="tea-attribute">
-                    <span>Smoked green tea leaves</span>
+                    <span id="green_ing">Smoked green tea leaves</span>
                   </li>
                   <li class="tea-attribute">
-                    <span>Dried Goji berries</span>
+                    <span id="green_ing1">Dried Goji berries</span>
                   </li>
 
                   <li class="tea-attribute">
-                    <span>Caffeine: 28 mg/8oz</span>
+                    <span id="green_caff">Caffeine: 28 mg/8oz</span>
                   </li>
                   <li class="tea-attribute">
-                    <span>L-Theanine: 6.56 mg/cup</span>
+                    <span id="green_theanine">L-Theanine: 6.56 mg/cup</span>
                   </li>
                   <li class="tea-attribute">
-                    <span><strong>20</strong> packs/box</span>
+                    <span id="green_packs"><strong>20</strong> packs/box</span>
+                  </li>
+                  <li class="tea-attribute">
+                    <span id="green_g"><strong>4</strong>g / pack</span>
                   </li>
                 </ul>
               </div>
@@ -445,7 +495,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-amount">
                     <span class="card__price-currency">NTD$</span
-                    ><span class="card__price-value">598</span>
+                    ><span class="card__price-value">780</span>
                   </p>
                   <a
                     href="https://drinkenoz.myshopify.com/"
@@ -469,20 +519,23 @@
               <div class="tea-content">
                 <ul class="tea-attributes">
                   <li class="tea-attribute">
-                    <span>Four season tea leaves</span>
+                    <span id="four_ing">Four season tea leaves</span>
                   </li>
                   <li class="tea-attribute">
-                    <span>Dried Goji berries</span>
+                    <span id="four_ing1">Dried Goji berries</span>
                   </li>
 
                   <li class="tea-attribute">
-                    <span>Caffeine: 21 mg/8oz</span>
+                    <span id="four_caff">Caffeine: 21 mg/8oz</span>
                   </li>
                   <li class="tea-attribute">
-                    <span>L-Theanine: 4.86 mg/cup</span>
+                    <span id="four_theanine">L-Theanine: 4.86 mg/cup</span>
                   </li>
                   <li class="tea-attribute">
-                    <span><strong>20</strong> packs/box</span>
+                    <span id="four_packs"><strong>20</strong> packs/box</span>
+                  </li>
+                  <li class="tea-attribute">
+                    <span id="four_g"><strong>4</strong>g / pack</span>
                   </li>
                 </ul>
               </div>
@@ -495,7 +548,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-amount">
                     <span class="card__price-currency">NTD$</span
-                    ><span class="card__price-value">598</span>
+                    ><span class="card__price-value">780</span>
                   </p>
                   <a
                     href="https://drinkenoz.myshopify.com/"
@@ -512,17 +565,17 @@
         <div class="container grid grid--2-cols">
           <div class="howtodrink">
             <ion-icon name="flame-outline" class="howtoheader-icons"></ion-icon>
-            <h3 class="heading-tertiary howto-hot">Hot</h3>
+            <h3 class="heading-tertiary howto-hot" id="hot">Hot</h3>
             <ul class="step-desc howto-desc">
               <ion-icon name="water-outline" class="howto-icons"></ion-icon>
-              <li>Add 250mL of water</li>
+              <li id="hot_step1">Add 250mL of water</li>
               <ion-icon
                 name="thermometer-outline"
                 class="howto-icons"
               ></ion-icon>
-              <li>Steep after water boils</li>
+              <li id="hot_step2">Steep after water boils</li>
               <ion-icon name="time-outline" class="howto-icons"></ion-icon>
-              <li>Wait 30 seconds - 1 minute</li>
+              <li id="how_step3">Wait 30 seconds - 1 minute</li>
             </ul>
           </div>
           <div class="howtodrink">

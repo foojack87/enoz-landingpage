@@ -64,6 +64,13 @@ Default: 9px
 /* NAV */
 /****************************/
 
+.language-button {
+  border: none;
+  font-size: 1.2rem;
+  background: none;
+  cursor: pointer;
+}
+
 .main-nav-list {
   list-style: none;
   display: flex;
