@@ -68,6 +68,35 @@ const obs = new IntersectionObserver(
 );
 obs.observe(sectionHero);
 
+// Modal
+
+// Get the modal element
+const modal = document.getElementById('about_modal');
+
+// Get the link that opens the modal
+const link = document.getElementById('about_nav');
+
+// Get the close button element
+const closeBtn = document.getElementsByClassName('close')[0];
+
+// Open the modal when the link is clicked
+link.addEventListener('click', function (e) {
+  e.preventDefault();
+  modal.style.display = 'block';
+});
+
+// Close the modal when the close button is clicked
+closeBtn.addEventListener('click', function () {
+  modal.style.display = 'none';
+});
+
+// Close the modal when clicking outside of it
+window.addEventListener('click', function (e) {
+  if (e.target == modal) {
+    modal.style.display = 'none';
+  }
+});
+
 // change language
 
 function changeLanguage() {
@@ -80,6 +109,17 @@ function changeLanguage() {
   } else {
     // Change to English
     features_nav.textContent = 'Features';
+  }
+
+  const about_nav = document.getElementById('about_nav');
+
+  // Check the current language
+  if (about_nav.textContent === 'About us') {
+    // Change to Chinese
+    about_nav.textContent = '關於我';
+  } else {
+    // Change to English
+    about_nav.textContent = 'About us';
   }
 
   const flavors_nav = document.getElementById('flavors_nav');
@@ -142,7 +182,7 @@ function changeLanguage() {
   // Check the current language
   if (hero_heading.textContent.trim() === 'The secret of concentration') {
     // Change to Chinese
-    hero_heading.textContent = '專注的秘密 (The secret of concentration)';
+    hero_heading.textContent = '專注的秘密';
   } else {
     // Change to English
     hero_heading.textContent = 'The secret of concentration';
@@ -194,8 +234,7 @@ function changeLanguage() {
     'Must know features about our products'
   ) {
     // Change to Chinese
-    features_heading.textContent =
-      '瞭解我們的產品特色 (Must know features about or products)';
+    features_heading.textContent = '瞭解我們的產品特色';
   } else {
     // Change to English
     features_heading.textContent = 'Must know features about our products';
@@ -206,7 +245,7 @@ function changeLanguage() {
   // Check the current language
   if (ingredients.textContent.trim() === 'Ingredients') {
     // Change to Chinese
-    ingredients.textContent = '原料 Ingredients';
+    ingredients.textContent = '原料';
   } else {
     // Change to English
     ingredients.textContent = 'Ingredients';
@@ -233,7 +272,7 @@ function changeLanguage() {
   // Check the current language
   if (conc_health.textContent.trim() === 'Concentration and Health') {
     // Change to Chinese
-    conc_health.textContent = '注意力與健康 Concentration and Health';
+    conc_health.textContent = '注意力與健康';
   } else {
     // Change to English
     conc_health.textContent = 'Concentration and Health';
@@ -260,7 +299,7 @@ function changeLanguage() {
   // Check the current language
   if (origin.textContent.trim() === 'Origin') {
     // Change to Chinese
-    origin.textContent = '產地 Origin';
+    origin.textContent = '產地';
   } else {
     // Change to English
     origin.textContent = 'Origin';
@@ -286,7 +325,7 @@ function changeLanguage() {
   // Check the current language
   if (brew.textContent.trim() === 'Signature Brew') {
     // Change to Chinese
-    brew.textContent = '專有萃茶技術 Signature Brew ';
+    brew.textContent = '專有萃茶技術';
   } else {
     // Change to English
     brew.textContent = 'Signature Brew';
@@ -327,7 +366,7 @@ function changeLanguage() {
     'We currently offer 4 different flavors'
   ) {
     // Change to Chinese
-    prods_heading.textContent = `我們目前提供四種口味 (We currently offer 4 different flavors)`;
+    prods_heading.textContent = `我們目前提供四種口味`;
   } else {
     // Change to English
     prods_heading.textContent = 'We currently offer 4 different flavors';
@@ -467,7 +506,7 @@ function changeLanguage() {
     'Made with the best ingredients from Taiwan'
   ) {
     // Change to Chinese
-    prod_details_title.textContent = `使用台灣最好的材料 (Made with the best ingredients from Taiwan)`;
+    prod_details_title.textContent = `使用台灣最好的材料`;
   } else {
     // Change to English
     prod_details_title.textContent =
@@ -751,5 +790,165 @@ function changeLanguage() {
     // Change to English
     prod_reminder_text.textContent =
       '*Caffeine and L-theanine for reference only. May differ based on brew.';
+  }
+
+  const hot = document.getElementById('hot');
+
+  // Check the current language
+  if (hot.textContent.trim() === 'Hot') {
+    // Change to Chinese
+    hot.textContent = `熱泡`;
+  } else {
+    // Change to English
+    hot.textContent = 'Hot';
+  }
+
+  const hot_step1 = document.getElementById('hot_step1');
+
+  // Check the current language
+  if (hot_step1.textContent.trim() === 'Add 250mL of water') {
+    // Change to Chinese
+    hot_step1.textContent = `取一個茶包置於杯中`;
+  } else {
+    // Change to English
+    hot_step1.textContent = 'Add 250mL of water';
+  }
+
+  const hot_step2 = document.getElementById('hot_step2');
+
+  // Check the current language
+  if (hot_step2.textContent.trim() === 'Steep after water boils') {
+    // Change to Chinese
+    hot_step2.textContent = `倒入250mL的熱水`;
+  } else {
+    // Change to English
+    hot_step2.textContent = 'Steep after water boils';
+  }
+
+  const hot_step3 = document.getElementById('hot_step3');
+
+  // Check the current language
+  if (hot_step3.textContent.trim() === 'Wait 30 seconds - 1 minute') {
+    // Change to Chinese
+    hot_step3.textContent = `靜置30 - 60秒`;
+  } else {
+    // Change to English
+    hot_step3.textContent = 'Wait 30 seconds - 1 minute';
+  }
+
+  const cold = document.getElementById('cold');
+
+  // Check the current language
+  if (cold.textContent.trim() === 'Cold') {
+    // Change to Chinese
+    cold.textContent = `冷泡`;
+  } else {
+    // Change to English
+    cold.textContent = 'Cold';
+  }
+
+  const cold_step1 = document.getElementById('cold_step1');
+
+  // Check the current language
+  if (cold_step1.textContent.trim() === 'Drop 1 or 2 packs in water bottle') {
+    // Change to Chinese
+    cold_step1.textContent = `取1-2個茶包置於水瓶中`;
+  } else {
+    // Change to English
+    cold_step1.textContent = 'Drop 1 or 2 packs in water bottle';
+  }
+
+  const cold_step2 = document.getElementById('cold_step2');
+
+  // Check the current language
+  if (cold_step2.textContent.trim() === '350mL of water') {
+    // Change to Chinese
+    cold_step2.textContent = `倒入350mL的冷水`;
+  } else {
+    // Change to English
+    cold_step2.textContent = '350mL of water';
+  }
+
+  const cold_step3 = document.getElementById('cold_step3');
+
+  // Check the current language
+  if (cold_step3.textContent.trim() === 'Shake for 1 - 3 mins') {
+    // Change to Chinese
+    cold_step3.textContent = `手搖1 - 3分鐘`;
+  } else {
+    // Change to English
+    cold_step3.textContent = 'Shake for 1 - 3 mins';
+  }
+
+  const cta_heading = document.getElementById('cta_heading');
+
+  // Check the current language
+  if (
+    cta_heading.textContent.trim() === 'Sign up to get notified on discounts!'
+  ) {
+    // Change to Chinese
+    cta_heading.textContent = `註冊以獲取折扣通知!`;
+  } else {
+    // Change to English
+    cta_heading.textContent = 'Sign up to get notified on discounts!';
+  }
+
+  const cta_content = document.getElementById('cta_content');
+
+  // Check the current language
+  if (
+    cta_content.textContent.trim().replace(/\s/g, '') ===
+    'Gethealthynowandtryitout!Signuphereandwewillnotifyyouwheneverwehavediscountpromotionsandgiveaways.Freecouponforimmediatesign-up.'
+  ) {
+    // Change to Chinese
+    cta_content.textContent = `想知道Enoz背後的秘密, 就喝Enoz! 立即註冊可以獲得折扣優惠碼, 隨時收到通知最新優惠方案及折扣訊息`;
+  } else {
+    // Change to English
+    cta_content.textContent =
+      'Get healthy now and try it out! Sign up here and we will notify you whenever we have discount promotions and giveaways. Free coupon for immediate sign-up.';
+  }
+
+  const input_name = document.getElementById('input_name');
+
+  // Check the current language
+  if (input_name.textContent.trim() === 'Full Name') {
+    // Change to Chinese
+    input_name.textContent = `姓名`;
+  } else {
+    // Change to English
+    input_name.textContent = 'Full Name';
+  }
+
+  const cta_hear = document.getElementById('cta_hear');
+
+  // Check the current language
+  if (cta_hear.textContent.trim() === 'Where did you hear about us?') {
+    // Change to Chinese
+    cta_hear.textContent = `從哪裡知道我們`;
+  } else {
+    // Change to English
+    cta_hear.textContent = 'Where did you hear about us?';
+  }
+
+  const option = document.getElementById('option');
+
+  // Check the current language
+  if (option.textContent.trim() === 'Please choose an option') {
+    // Change to Chinese
+    option.textContent = `請選擇`;
+  } else {
+    // Change to English
+    option.textContent = 'Please choose an option';
+  }
+
+  const signup = document.getElementById('signup');
+
+  // Check the current language
+  if (signup.textContent.trim() === 'Sign up now') {
+    // Change to Chinese
+    signup.textContent = `立即註冊`;
+  } else {
+    // Change to English
+    signup.textContent = 'Sign up now';
   }
 }

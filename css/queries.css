@@ -201,6 +201,11 @@
     grid-template-columns: 1fr;
   }
 
+  .modal-content {
+    width: 90%;
+    margin: 20% auto;
+  }
+
   .btn,
   .btn:link,
   .btn:visited {
