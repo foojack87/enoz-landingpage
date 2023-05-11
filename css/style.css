@@ -489,6 +489,15 @@ Default: 9px
   margin-left: 1rem;
 }
 
+.product_reminder {
+  display: flex;
+  justify-content: center;
+}
+
+.product_reminder_text {
+  font-size: 1.4rem;
+}
+
 /****************************/
 /* HOW TO DRINK */
 /****************************/

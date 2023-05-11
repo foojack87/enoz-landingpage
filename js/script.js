@@ -737,4 +737,19 @@ function changeLanguage() {
     // Change to English
     four_g.textContent = '4g / pack';
   }
+
+  const prod_reminder_text = document.getElementById('prod_reminder_text');
+
+  // Check the current language
+  if (
+    prod_reminder_text.textContent.trim().replace(/\s/g, '') ===
+    '*CaffeineandL-theanineforreferenceonly.Maydifferbasedonbrew.'
+  ) {
+    // Change to Chinese
+    prod_reminder_text.textContent = `*咖啡因及茶胺酸數據僅供參考, 實際數據會因沖泡方式有所不同`;
+  } else {
+    // Change to English
+    prod_reminder_text.textContent =
+      '*Caffeine and L-theanine for reference only. May differ based on brew.';
+  }
 }
