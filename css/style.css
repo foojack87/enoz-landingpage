@@ -763,25 +763,28 @@ Default: 9px
 
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto;
+  margin: 2rem auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
   max-width: 600px;
   border-radius: 10px;
+  z-index: 200;
 }
 
 .modal-content_heading {
-  font-size: 7rem;
-  border-bottom: solid;
+  font-size: 2rem;
+  color: #dcb929;
+  border-bottom: solid black;
   padding-bottom: 1rem;
 }
 
 .modal-content_main {
   display: flex;
+  font-size: 1.6rem;
   flex-direction: column;
   letter-spacing: 2px;
-  line-height: 21px;
+  line-height: 19px;
 }
 
 .aboutus-img {
@@ -808,8 +811,4 @@ Default: 9px
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
-
-.modal-content_main {
-  font-size: 1.8rem;
 }
