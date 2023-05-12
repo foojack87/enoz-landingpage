@@ -858,6 +858,28 @@ function changeLanguage() {
     hot_step1.textContent = 'Add 250mL of water';
   }
 
+  const ion_icon = document.getElementById('watericon');
+
+  // Check the current language
+  if (ion_icon.name === 'water-outline') {
+    // Change to Chinese
+    ion_icon.setAttribute('name', 'leaf-outline');
+  } else {
+    // Change to English
+    ion_icon.setAttribute('name', 'water-outline');
+  }
+
+  const ion_icon1 = document.getElementById('thermoicon');
+
+  // Check the current language
+  if (ion_icon1.name === 'thermometer-outline') {
+    // Change to Chinese
+    ion_icon1.setAttribute('name', 'water-outline');
+  } else {
+    // Change to English
+    ion_icon1.setAttribute('name', 'thermometer-outline');
+  }
+
   const hot_step2 = document.getElementById('hot_step2');
 
   // Check the current language
