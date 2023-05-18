@@ -197,7 +197,7 @@ function changeLanguage() {
   ) {
     // Change to Chinese
     hero_main.textContent =
-      '全天然, 不含添加物，讓您健康飲用,又能維持專注力及動能。 專為長時間使用電腦工作及娛樂的您量身打造的茶飲';
+      '全天然，不含添加物，讓您健康飲用，又能維持專注力及動能。專為長時間使用電腦工作及娛樂的您量身打造的茶飲';
   } else {
     // Change to English
     hero_main.textContent =
@@ -260,7 +260,7 @@ function changeLanguage() {
   ) {
     // Change to Chinese
     ingredients_desc.textContent =
-      '成分全天然，無添加物, 無防腐劑。 只使用帶有天然香氣的茶葉和天然甜味的枸杞子';
+      '成分全天然，無添加物，無防腐劑。只使用帶有天然香氣的茶葉和天然甜味的枸杞子';
   } else {
     // Change to English
     ingredients_desc.textContent =
@@ -287,7 +287,7 @@ function changeLanguage() {
   ) {
     // Change to Chinese
     conc_desc.textContent =
-      '茶胺酸（L-Theanine）是茶湯中特有的胺基酸, 茶氨酸可減輕壓力和焦慮以促進放鬆. 茶葉中的天然咖啡因可讓您保持專注。枸杞子含有眼睛保健的必需營養素';
+      '茶胺酸（L-Theanine）是茶湯中特有的胺基酸，茶氨酸可減輕壓力和焦慮以促進放鬆。茶葉中的天然咖啡因可讓您保持專注。枸杞子含有眼睛保健的必需營養素';
   } else {
     // Change to English
     conc_desc.textContent =
@@ -314,7 +314,7 @@ function changeLanguage() {
   ) {
     // Change to Chinese
     origin_desc.textContent =
-      '茶葉來自台灣高山。全部精心挑選手工採摘烘焙, 不使用任何化學肥料及農藥。 每一款茶葉都經過ITS檢驗,確保茶葉都符合政府安全規範';
+      '茶葉來自台灣高山。全部精心挑選手工採摘烘焙，不使用任何化學肥料及農藥。 每一款茶葉都經過ITS檢驗，確保茶葉都符合政府安全規範';
   } else {
     // Change to English
     origin_desc.textContent = `Tea leaves are all hand-picked from the high mountains of Taiwan. Our ingredients, especially our tea leaves are very carefully roasted and curated from our own tea garden. We use the best quality and don't use any pesticides at all.`;
@@ -339,7 +339,7 @@ function changeLanguage() {
     'Ourdrinkcanbebrewedbothhotorcolddependingonpreferences.Howeveroursignatureisthecoldbrew.Withjust1-3minofshakinginabottle,itisreadytodrink.'
   ) {
     // Change to Chinese
-    brew_desc.textContent = `我們的飲料使用特有的萃茶技術,可以根據喜好沖泡熱飲或冷飲。 冷泡是新興的茶泡法，受大部分年輕人的喜愛。特別適合上班族或外勤人員飲用。使用方便攜帶的水壺或罐子加入茶包, 依自己濃淡喜好, 手搖1-3分鐘即可開始飲用
+    brew_desc.textContent = `我們的飲料使用特有的萃茶技術，可以根據喜好沖泡熱飲或冷飲。 冷泡是新興的茶泡法，受大部分年輕人的喜愛。特別適合上班族或外勤人員飲用。使用方便攜帶的水壺或罐子加入茶包，依自己濃淡喜好，手搖1-3分鐘即可開始飲用
     `;
   } else {
     // Change to English
