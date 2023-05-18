@@ -967,7 +967,7 @@ function changeLanguage() {
     'Gethealthynowandtryitout!Signuphereandwewillnotifyyouwheneverwehavediscountpromotionsandgiveaways.Freecouponforimmediatesign-up.'
   ) {
     // Change to Chinese
-    cta_content.textContent = `想知道專注的秘密, 就喝Enoz! 立即註冊可以獲得折扣優惠碼, 隨時收到通知最新優惠方案及折扣訊息`;
+    cta_content.textContent = `想知道專注的秘密， 就喝Enoz! 立即註冊可以獲得折扣優惠碼， 隨時收到通知最新優惠方案及折扣訊息`;
   } else {
     // Change to English
     cta_content.textContent =
