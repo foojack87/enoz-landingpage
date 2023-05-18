@@ -127,7 +127,7 @@ function changeLanguage() {
   // Check the current language
   if (flavors_nav.textContent === `What's inside`) {
     // Change to Chinese
-    flavors_nav.textContent = '成份';
+    flavors_nav.textContent = '內容';
   } else {
     // Change to English
     flavors_nav.textContent = `What's inside`;
@@ -260,7 +260,7 @@ function changeLanguage() {
   ) {
     // Change to Chinese
     ingredients_desc.textContent =
-      '成分全天然，無添加物, 無防腐劑。 只使用帶有天然香氣的茶葉和天然甜味的枸杞子。';
+      '成分全天然，無添加物, 無防腐劑。 只使用帶有天然香氣的茶葉和天然甜味的枸杞子';
   } else {
     // Change to English
     ingredients_desc.textContent =
@@ -339,7 +339,7 @@ function changeLanguage() {
     'Ourdrinkcanbebrewedbothhotorcolddependingonpreferences.Howeveroursignatureisthecoldbrew.Withjust1-3minofshakinginabottle,itisreadytodrink.'
   ) {
     // Change to Chinese
-    brew_desc.textContent = `我們的飲料使用特有的萃茶技術,可以根據喜好沖泡熱飲或冷飲。 冷泡是新興的茶泡法，受大部分年輕人的喜愛。特別適合上班族或外勤人員飲用。使用方便攜帶的水壺或罐子加入茶包, 依自己濃淡喜好, 手搖1-3分鐘即可開始飲用。
+    brew_desc.textContent = `我們的飲料使用特有的萃茶技術,可以根據喜好沖泡熱飲或冷飲。 冷泡是新興的茶泡法，受大部分年輕人的喜愛。特別適合上班族或外勤人員飲用。使用方便攜帶的水壺或罐子加入茶包, 依自己濃淡喜好, 手搖1-3分鐘即可開始飲用
     `;
   } else {
     // Change to English
@@ -716,7 +716,7 @@ function changeLanguage() {
   // Check the current language
   if (four_ing.textContent.trim() === 'Four season tea leaves') {
     // Change to Chinese
-    four_ing.textContent = `綠茶葉`;
+    four_ing.textContent = `四季春茶葉`;
   } else {
     // Change to English
     four_ing.textContent = 'Four season tea leaves';
@@ -967,7 +967,7 @@ function changeLanguage() {
     'Gethealthynowandtryitout!Signuphereandwewillnotifyyouwheneverwehavediscountpromotionsandgiveaways.Freecouponforimmediatesign-up.'
   ) {
     // Change to Chinese
-    cta_content.textContent = `想知道Enoz背後的秘密, 就喝Enoz! 立即註冊可以獲得折扣優惠碼, 隨時收到通知最新優惠方案及折扣訊息`;
+    cta_content.textContent = `想知道專注的秘密, 就喝Enoz! 立即註冊可以獲得折扣優惠碼, 隨時收到通知最新優惠方案及折扣訊息`;
   } else {
     // Change to English
     cta_content.textContent =
