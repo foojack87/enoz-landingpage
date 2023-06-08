@@ -30,28 +30,48 @@
       <div class="modal-content">
         <span class="close">&times;</span>
         <div class="modal-content_container">
-        <h2 class="modal-content_heading">品牌故事</h2>
-        <img src="/img/aboutus_img.png" alt="" class="aboutus-img" />
-        <p class="modal-content_main">
-          <span>電玩愛好者，以及長時間使用電腦者，會經常飲用手搖飲，碳酸飲料，和機能飲料來提神和解渴。</span></br>
-          <span>偶然的機會走訪茶園接觸到台灣茶，身為熱衷機能飲料的Z世代，立刻被那種單純又輕鬆的風味所吸引。如何用它來取代充滿添加物對身體帶來負擔的機能飲料，但又能維持我需要的專注力和動能？
-          </span></br>
-          <span>於是有了可以輕鬆泡，輕鬆喝，輕鬆玩的冷泡茶飲的研發概念。</span>
-        </br>
-          <span>我們嚴選台灣栽種，無毒無農藥的茶葉做為天然咖啡因的來源，加入富含天然抗氧化劑的枸杞子，並使用特有的萃茶技術製作成冷泡隨沖的茶包。</span>
-        </br>
-        <span>我們要用健康天然的飲品取代機能飲料。讓電競選手，遊戲玩家和3C重度使用者，無論在遊戲中或工作中能有更好的飲品選擇，給自己一個專心而享受的時光.</span>
-        </p>
-      </div>
+          <h2 class="modal-content_heading">品牌故事</h2>
+          <img src="/img/aboutus_img.png" alt="" class="aboutus-img" />
+          <p class="modal-content_main" id="aboutus">
+            <span data-translate="intro"
+              >Gamers and heavy computer users often rely on energy drinks,
+              carbonated beverages, and functional drinks to stay alert and
+              quench their thirst.</span
+            ><br />
+            <span data-translate="chance"
+              >By chance, we visited a tea plantation and discovered Taiwanese
+              tea. As a Generation Z enthusiast of functional drinks, we were
+              immediately drawn to its pure and refreshing flavors. How can we
+              replace functional drinks loaded with additives without
+              sacrificing the focus and energy we need?</span
+            ><br />
+            <span data-translate="concept"
+              >Thus, the concept of easy-to-brew, easy-to-drink, and
+              easy-to-enjoy cold-brewed tea was born.</span
+            ><br />
+            <span data-translate="selection"
+              >We carefully select Taiwanese tea leaves grown without pesticides
+              or toxins as a natural source of caffeine. We add goji berries,
+              which are rich in natural antioxidants, and use a unique tea
+              extraction technique to create tea bags for convenient cold
+              brewing.</span
+            ><br />
+            <span data-translate="mission"
+              >Our mission is to replace functional drinks with healthy and
+              natural beverages. Whether you are an esports athlete, gamer, or
+              heavy user of electronic devices, we aim to provide you with
+              better beverage choices for focused and enjoyable moments.</span
+            >
+          </p>
+        </div>
       </div>
     </div>
     <header class="header">
       <a href="#"
         ><img class="logo" alt="enoz logo" src="img/enoz logo.png"
       /></a>
-     
+
       <nav class="main-nav">
-        
         <ul class="main-nav-list">
           <li>
             <a class="main-nav-link" href="#features" id="features_nav"
@@ -61,8 +81,6 @@
           <li>
             <a class="main-nav-link" href="#" id="about_nav">About us</a>
           </li>
-
-       
 
           <li>
             <a class="main-nav-link" href="#flavors" id="flavors_nav"
@@ -83,21 +101,19 @@
             <a class="main-nav-link" href="#cta" id="cta_nav">Contact Us</a>
           </li>
           <button
-      class="language-button"
-      id="languageButton"
-      onclick="changeLanguage()"
-    >
-      English / 中文
-    </button>
+            class="language-button"
+            id="languageButton"
+            onclick="changeLanguage()"
+          >
+            English / 中文
+          </button>
           <div>
-            
             <a
               class="main-nav-link nav-cta"
               href="https://drinkenoz.myshopify.com/"
               id="buynow"
               >Buy Now</a
             >
-            
           </div>
         </ul>
       </nav>
@@ -606,7 +622,11 @@
             <ion-icon name="flame-outline" class="howtoheader-icons"></ion-icon>
             <h3 class="heading-tertiary howto-hot" id="hot">Hot</h3>
             <ul class="step-desc howto-desc">
-              <ion-icon name="water-outline" id="watericon" class="howto-icons"></ion-icon>
+              <ion-icon
+                name="water-outline"
+                id="watericon"
+                class="howto-icons"
+              ></ion-icon>
               <li id="hot_step1">Add 250mL of water</li>
               <ion-icon
                 name="thermometer-outline"

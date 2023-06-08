@@ -1017,4 +1017,33 @@ function changeLanguage() {
     // Change to English
     signup.textContent = 'Sign up now';
   }
+  const translations = {
+    english: {
+      intro: `Gamers and heavy computer users often rely on energy drinks, carbonated beverages, and functional drinks to stay alert and quench their thirst.`,
+      chance: `By chance, we visited a tea plantation and discovered Taiwanese tea. As a Generation Z enthusiast of functional drinks, we were immediately drawn to its pure and refreshing flavors. How can we replace functional drinks loaded with additives without sacrificing the focus and energy we need?`,
+      concept: `Thus, the concept of easy-to-brew, easy-to-drink, and easy-to-enjoy cold-brewed tea was born.`,
+      selection: `We carefully select Taiwanese tea leaves grown without pesticides or toxins as a natural source of caffeine. We add goji berries, which are rich in natural antioxidants, and use a unique tea extraction technique to create tea bags for convenient cold brewing.`,
+      mission: `Our mission is to replace functional drinks with healthy and natural beverages. Whether you are an esports athlete, gamer, or heavy user of electronic devices, we aim to provide you with better beverage choices for focused and enjoyable moments.`,
+    },
+    chinese: {
+      intro: `電玩愛好者，以及長時間使用電腦者，會經常飲用手搖飲，碳酸飲料，和機能飲料來提神和解渴。`,
+      chance: `偶然的機會走訪茶園接觸到台灣茶，身為熱衷機能飲料的Z世代，立刻被那種單純又輕鬆的風味所吸引。如何用它來取代充滿添加物對身體帶來負擔的機能飲料，但又能維持我需要的專注力和動能？`,
+      concept: `於是有了可以輕鬆泡，輕鬆喝，輕鬆玩的冷泡茶飲的研發概念。`,
+      selection: `我們嚴選台灣栽種，無毒無農藥的茶葉做為天然咖啡因的來源，加入富含天然抗氧化劑的枸杞子，並使用特有的萃茶技術製作成冷泡隨沖的茶包。`,
+      mission: `我們要用健康天然的飲品取代機能飲料。讓電競選手，遊戲玩家和3C重度使用者，無論在遊戲中或工作中能有更好的飲品選擇，給自己一個專心而享受的時光。`,
+    },
+  };
+
+  const aboutus = document.getElementById('aboutus');
+  const currentLanguage = aboutus.getAttribute('data-language');
+  const nextLanguage = currentLanguage === 'chinese' ? 'english' : 'chinese';
+
+  aboutus.setAttribute('data-language', nextLanguage);
+  aboutus.innerHTML = `
+    <span>${translations[nextLanguage].intro}</span><br />
+    <span>${translations[nextLanguage].chance}</span><br />
+    <span>${translations[nextLanguage].concept}</span><br />
+    <span>${translations[nextLanguage].selection}</span><br />
+    <span>${translations[nextLanguage].mission}</span>
+  `;
 }
