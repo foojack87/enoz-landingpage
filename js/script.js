@@ -172,9 +172,11 @@ function changeLanguage() {
   if (buynow.textContent === 'Buy Now') {
     // Change to Chinese
     buynow.textContent = '購買';
+    buynow.setAttribute('href', 'https://drinkenoz.myshopify.com');
   } else {
     // Change to English
     buynow.textContent = 'Buy Now';
+    buynow.setAttribute('href', 'https://drinkenoz.myshopify.com/en');
   }
 
   const hero_heading = document.getElementById('hero_heading');
