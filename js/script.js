@@ -1019,6 +1019,18 @@ function changeLanguage() {
     // Change to English
     signup.textContent = 'Sign up now';
   }
+
+  const aboutTitle = document.getElementById('about_title');
+
+  // Check the current language
+  if (aboutTitle.textContent.trim() === 'About us') {
+    // Change to Chinese
+    aboutTitle.textContent = `品牌故事`;
+  } else {
+    // Change to English
+    aboutTitle.textContent = 'About us';
+  }
+
   const translations = {
     english: {
       intro: `Gamers and heavy computer users often rely on energy drinks, carbonated beverages, and functional drinks to stay alert and quench their thirst.`,
