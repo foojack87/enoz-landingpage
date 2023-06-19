@@ -1023,12 +1023,12 @@ function changeLanguage() {
   const aboutTitle = document.getElementById('about_title');
 
   // Check the current language
-  if (aboutTitle.textContent.trim() === 'About us') {
+  if (aboutTitle.textContent.trim() === 'Brand Story') {
     // Change to Chinese
     aboutTitle.textContent = `品牌故事`;
   } else {
     // Change to English
-    aboutTitle.textContent = 'About us';
+    aboutTitle.textContent = 'Brand Story';
   }
 
   const translations = {
