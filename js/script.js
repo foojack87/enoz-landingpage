@@ -112,6 +112,6 @@ function changeLanguage() {
 
     window.location.href = newURL; // Redirect to the modified URL (enoz.com)
   } else {
-    window.location.href = currentURL + 'zh.html';
+    window.location.href = currentURL + 'zh';
   }
 }
