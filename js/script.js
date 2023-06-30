@@ -98,20 +98,15 @@ window.addEventListener('click', function (e) {
 });
 
 // change language
-
 function changeLanguage() {
   const currentURL = window.location.href;
+  const domainURL = 'www.enozdrink.com';
 
-  // Check if the current URL includes "/zh" or "/zh.html"
-  if (currentURL.includes('/zh') || currentURL.includes('/zh.html')) {
-    // Remove "/zh" or "/zh.html" from the URL
-    let newURL = currentURL.replace(/\/zh(.html)?/, '');
-
-    // Remove the hash part of the URL
-    newURL = newURL.replace(/#.*/, '');
-
-    window.location.href = newURL; // Redirect to the modified URL (enoz.com)
+  if (currentURL.includes('zh')) {
+    // Remove 'zh' if it exists
+    window.location.href = domainURL;
   } else {
-    window.location.href = currentURL + 'zh';
+    // Add 'zh' if it doesn't exist
+    window.location.href = domainURL + 'zh.html';
   }
 }
