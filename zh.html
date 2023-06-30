@@ -663,11 +663,13 @@
               <form
                 class="cta-form"
                 name="sign-up"
-                action="/success"
+                action="/success.html"
                 autocomplete="off"
                 netlify
+                netlify-honeypot="bot-field"
               >
                 <div>
+                  <input type="text" name="bot-field" style="display: none" />
                   <label for="full-name" id="input_name">姓名</label>
                   <input
                     id="full-name"
