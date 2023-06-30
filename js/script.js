@@ -100,13 +100,13 @@ window.addEventListener('click', function (e) {
 // change language
 function changeLanguage() {
   const currentURL = window.location.href;
-  const domainURL = 'www.enozdrink.com';
+  const domainURL = '/';
 
   if (currentURL.includes('zh')) {
     // Remove 'zh' if it exists
     window.location.href = domainURL;
   } else {
     // Add 'zh' if it doesn't exist
-    window.location.href = currentURL + 'zh';
+    window.location.href = '/zh';
   }
 }
