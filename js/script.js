@@ -107,6 +107,6 @@ function changeLanguage() {
     window.location.href = domainURL;
   } else {
     // Add 'zh' if it doesn't exist
-    window.location.href = domainURL + 'zh.html';
+    window.location.href = domainURL + 'zh';
   }
 }
