@@ -21,6 +21,17 @@
     font-size: 50%;
   }
 
+  .event {
+    text-align: center;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event a {
+    margin: 0 auto;
+  }
+
   /* MOBILE NAV */
 
   .btn-mobile-nav {
