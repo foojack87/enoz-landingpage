@@ -9,8 +9,6 @@ const mainNav = document.querySelector('.main-nav');
 const btnNav = document.querySelector('.btn-mobile-nav');
 const navCta = document.querySelector('.nav-cta');
 
-// const allLinks = document.querySelectorAll('a:link');
-
 btnNav.addEventListener('click', function (e) {
   e.preventDefault();
   header.classList.toggle('nav-open');
@@ -27,24 +25,6 @@ window.addEventListener('scroll', function () {
     }
   });
 });
-// allLinks.forEach(function (link) {
-//   link.addEventListener('click', function (e) {
-//     e.preventDefault();
-
-//     const href = link.getAttribute('href');
-
-//     if (href === '#') {
-//       window.scrollTo({ top: 0, bottom: 'smooth' });
-//     }
-
-//     if (href !== '#' && href.startsWith('#')) {
-//       const sectionEl = document.querySelector(href);
-//       sectionEl.scrollIntoView({ behavior: 'smooth' });
-//     }
-//     if (link.classList.contains('main-nav-link'))
-//       header.classList.toggle('nav-open');
-//   });
-// });
 
 //// STICKY NAV ////
 
