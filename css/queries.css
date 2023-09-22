@@ -92,6 +92,14 @@
   .main-nav-link:visited {
     font-size: 3rem;
   }
+
+  .language-text {
+    font-size: 2.4rem;
+  }
+
+  .language-separator {
+    font-size: 2rem;
+  }
 }
 
 /****************************/

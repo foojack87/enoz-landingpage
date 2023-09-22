@@ -81,9 +81,16 @@ Default: 9px
 
 .language-button {
   border: none;
-  font-size: 1.2rem;
   background: none;
   cursor: pointer;
+}
+
+.language-text {
+  font-size: 1.6rem;
+}
+
+.language-separator {
+  font-size: 1.2rem;
 }
 
 .main-nav-list {

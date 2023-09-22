@@ -7,11 +7,18 @@ yearEL.textContent = currentYear;
 const header = document.querySelector('.header');
 const mainNav = document.querySelector('.main-nav');
 const btnNav = document.querySelector('.btn-mobile-nav');
+const navLinks = document.querySelectorAll('.main-nav-link')
 const navCta = document.querySelector('.nav-cta');
 
 btnNav.addEventListener('click', function (e) {
   e.preventDefault();
   header.classList.toggle('nav-open');
+});
+
+navLinks.forEach(function (navLink) {
+  navLink.addEventListener('click', function (e) {
+    header.classList.remove('nav-open');
+  });
 });
 
 // Detect when the divs enter the viewport
@@ -33,7 +40,6 @@ const sectionHero = document.querySelector('.section-hero');
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    console.log(ent);
     if (!ent.isIntersecting) {
       document.body.classList.add('sticky');
     } else {
@@ -82,11 +88,19 @@ function changeLanguage() {
   const currentURL = window.location.href;
   const domainURL = '/';
 
-  if (currentURL.includes('zh')) {
-    // Remove 'zh' if it exists
+  if (currentURL.includes('english')) {
+    // Remove 'english' if it exists
     window.location.href = domainURL;
   } else {
-    // Add 'zh' if it doesn't exist
-    window.location.href = '/zh';
+    // Add 'english' if it doesn't exist
+    window.location.href = '/english';
   }
+}
+
+function changeLanguageToEnglish() {
+  window.location.href = '/english'
+}
+
+function changeLanguageToChinese() {
+  window.location.href = '/'
 }
